@@ -1,5 +1,5 @@
 body {
-  font: 130% Helvetica, sans-serif;
+  font: 130% Lato, sans-serif;
   font-weight: 100;
   line-height: 1.8em;
   color: #13364f;
@@ -82,7 +82,7 @@ h1 {
   margin-right: 100px; }
 
 #left-col h2 {
-  font: 133% Helvetica, sans-serif;
+  font: 133% Lato, sans-serif;
   font-variant: small-caps;
   font-weight: 600;
   letter-spacing: 3.2px;
