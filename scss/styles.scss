@@ -1,7 +1,12 @@
 // styles.scss
 
 //variables
-$column-width:85px;
+$font-stack:    Helvetica, sans-serif;
+$primary-color:#13364f;
+$soda-blue:#3784c5;
+$dark-blue:darken($soda-blue, 10%);
+$blue-black:darken($soda-blue, 35%);
+$column-width:82px;
 $fbook-blue:#256299;
 $twitt-blue:#378bb7;
 $insta-blue:#246485;
@@ -14,21 +19,31 @@ $insta-blue:#246485;
           border-radius: $radius;
 }
 
+body {
+  font: 130% $font-stack;
+  font-weight: 100;
+  line-height: 1.8em;
+  color: $primary-color;
+  margin: 0;
+}
+
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   color:white;
   font-variant: small-caps;
   font-family:sans-serif;
-  letter-spacing: 3.2px;
-  padding-top:74px;
+  line-height: 1em;
+  letter-spacing:6px;
+  padding-top:25px;
   text-align: center;
 }
 
 #container {
   width: 1400px;
   height: 5000px;
-  background-color: blue;
+  background-color: white;
   margin: 0 auto;
+  padding: 0px;
 }
 
 #header {
@@ -38,7 +53,7 @@ h1 {
 }
 
 #header .main-logo {
-  padding-top: 162px;
+  padding-top: 100px;
   padding-left: 602px;
 }
 
@@ -75,31 +90,81 @@ h1 {
   background-color: $insta-blue;
 }
 
-
-#left-col{
-  width: 4 * $column-width;
-  display: inline-block;
-}
-
-#right-col{
-  width: 8 * $column-width;
-  display: inline-block;
-}
-
 #main {
   background-color: white;
-  width:12 * $column-width;
+  width:12.44 * $column-width;
+  height: 630px;
+  padding-top:85px;
+  padding-left: 100px;
   margin-left: 162px;
+}
+
+#left-col{
+  width: 3 * $column-width;
+  float:left;
+  margin-right: 100px;
+  }
+
+#left-col h2 {
+  font: 133% $font-stack;
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: 3.2px;
+  color:$dark-blue;
+}
+
+.rule {
+  width :277px;
+  min-height: 9px;
+  margin-bottom: -10px;
+  background-color: $dark-blue;
+}
+
+ #right-col{
+  width: 660px;
+  float: left;
+}
+
+#right-col p {
+  margin-top: -10px;
+  padding-top: 0;
+  //margin-right: 75px;
+  margin-bottom: 30px;
+
 }
 
 #clients {
   background-image: url("/images/clients_bg.jpg");
   background-size: auto;
+  text-align: center;
   height:783px;
-  margin: 0;
+  margin: 0 auto;
 }
+
  #clients .client-square {
    width:226px;
    height: 226px;
-   background-color: rgba(0, 0, 0, 20);
+   background-color:rgba($blue-black, .97);
+   float:left;
+   margin-right:23px;
  }
+
+#clients .row {
+  display: inline-block;
+  //margin-top: 90px;
+  margin-bottom:23px;
+}
+
+#clients-heading {
+  text-align: center;
+  //margin-bottom: -100px;
+}
+
+#clients-heading .fine-rule {
+  display:inline-block;
+  width :341px;
+  min-height: 1px;
+  padding-top: -150px;
+  background-color: white;
+  margin-top: -100px;
+}
