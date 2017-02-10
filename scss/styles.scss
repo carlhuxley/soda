@@ -1,7 +1,7 @@
 // styles.scss
 
 //variables
-$font-stack:    Lato, sans-serif;
+$font-stack:sans-serif;
 $primary-color:#13364f;
 $soda-blue:#3784c5;
 $dark-blue:darken($soda-blue, 10%);
@@ -58,7 +58,6 @@ h1 {
 }
 
 #header .row {
-  //width: 200px;
   padding-left: 25px;
   padding-top:22px;
   margin: 0 auto;
@@ -69,8 +68,8 @@ h1 {
   width:40px;
   height:40px;
   display: inline-block;
-    margin-right: 12px;
-    background-color: $fbook-blue;
+  margin-right: 12px;
+  background-color: $fbook-blue;
 }
 
 #header .twitt-circle {
@@ -78,8 +77,8 @@ h1 {
   width:40px;
   height:40px;
   display: inline-block;
-    margin-right: 12px;
-    background-color: $twitt-blue;
+  margin-right: 12px;
+  background-color: $twitt-blue;
 }
 
 #header .insta-circle {
@@ -88,6 +87,17 @@ h1 {
   height:40px;
   display: inline-block;
   background-color: $insta-blue;
+}
+
+#header .fine-rule {
+  display:inline-block;
+  position:relative;
+  top:-109px;
+  left: 385px;
+  width:616px;
+  height:1px;
+  background-color:white;
+  margin-top:100px;
 }
 
 #main {
@@ -128,9 +138,7 @@ h1 {
 #right-col p {
   margin-top: -10px;
   padding-top: 0;
-  //margin-right: 75px;
   margin-bottom: 30px;
-
 }
 
 #clients {
@@ -145,26 +153,22 @@ h1 {
    width:226px;
    height: 226px;
    background-color:rgba($blue-black, .97);
-   float:left;
-   margin-right:23px;
- }
-
-#clients .row {
-  display: inline-block;
-  //margin-top: 90px;
-  margin-bottom:23px;
-}
+   display: inline-block;
+   margin:11.5px;
+   }
 
 #clients-heading {
+  position:relative;
+  top:50px;
   text-align: center;
-  //margin-bottom: -100px;
-}
+  }
 
 #clients-heading .fine-rule {
   display:inline-block;
-  width :341px;
-  min-height: 1px;
-  padding-top: -150px;
-  background-color: white;
-  margin-top: -100px;
+  position:relative;
+  top:-119px;
+  width:341px;
+  height:1px;
+  background-color:white;
+  margin-top:100px;
 }
