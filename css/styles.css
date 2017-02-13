@@ -1,4 +1,5 @@
 body {
+  font-family: 'Roboto', sans-serif;
   font: 130% sans-serif;
   font-weight: 100;
   line-height: 1.8em;
@@ -9,7 +10,7 @@ h1 {
   font-size: 50px;
   color: white;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1em;
   letter-spacing: 6px;
   padding-top: 25px;
@@ -71,8 +72,8 @@ h1 {
   display: inline-block;
   position: relative;
   top: -109px;
-  left: 385px;
-  width: 616px;
+  left: 379px;
+  width: 615px;
   height: 1px;
   background-color: white;
   margin-top: 100px; }
@@ -93,6 +94,7 @@ h1 {
 #left-col h2 {
   font: 133% sans-serif;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   letter-spacing: 3.2px;
   color: #2c699d; }
@@ -135,7 +137,7 @@ h1 {
   display: inline-block;
   position: relative;
   top: -119px;
-  width: 341px;
+  width: 370px;
   height: 1px;
   background-color: white;
   margin-top: 100px; }
@@ -217,13 +219,13 @@ form#contact textarea {
   box-sizing: border-box; }
   form#contact textarea.placeholder {
     text-transform: uppercase;
-    font-size: 17.66px; }
+    font-size: 22px; }
   form#contact textarea:-moz-placeholder {
     text-transform: uppercase;
-    font-size: 17.66px; }
+    font-size: 22px; }
   form#contact textarea::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-size: 17.66px; }
+    font-size: 22px; }
 
 form#contact button {
   width: 336px;
