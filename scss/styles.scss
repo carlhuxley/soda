@@ -19,6 +19,14 @@ $insta-blue:#246485;
           border-radius: $radius;
 }
 
+@mixin placeholder {
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}
+
+//globals
+
 body {
   font: 130% $font-stack;
   font-weight: 100;
@@ -30,7 +38,7 @@ body {
 h1 {
   font-size: 50px;
   color:white;
-  font-variant: small-caps;
+  text-transform:uppercase;
   font-family:sans-serif;
   line-height: 1em;
   letter-spacing:6px;
@@ -45,6 +53,8 @@ h1 {
   margin: 0 auto;
   padding: 0px;
 }
+
+//Header
 
 #header {
   background-image: url("/images/header_bg.jpg");
@@ -99,8 +109,8 @@ h1 {
   background-color:white;
   margin-top:100px;
 }
-
-#main {
+//Main
+#main,  #contact{
   background-color: white;
   width:12.44 * $column-width;
   height: 630px;
@@ -117,7 +127,7 @@ h1 {
 
 #left-col h2 {
   font: 133% $font-stack;
-  font-variant: small-caps;
+  text-transform:uppercase;
   font-weight: 600;
   letter-spacing: 3.2px;
   color:$dark-blue;
@@ -140,7 +150,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 30px;
 }
-
+//Clients
 #clients {
   background-image: url("/images/clients_bg.jpg");
   background-size: auto;
@@ -171,4 +181,89 @@ h1 {
   height:1px;
   background-color:white;
   margin-top:100px;
+}
+//Contact
+#contact .left-col {
+  //position:relative;
+  width: 7 * $column-width;
+  float:left;
+  margin-right: 100px;
+}
+
+#contact h2 {
+  text-transform: uppercase;
+}
+
+#contact p span {
+  font-weight : bold;
+  text-transform: uppercase;
+}
+
+#contact .right-col {
+  display:inline-block;
+  position:relative;
+  top:-445px;
+  left: 595px;
+  width:341px;
+  width: 5 * $column-width;
+  //margin-right: 10px;
+}
+form#contact {
+  width:336px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+form#contact ol{
+  margin: 0;
+  padding:0px;
+}
+form#contact ol li {
+  list-style: none;
+  margin: 0px;
+}
+
+%fields {
+  background-color:#f2f3f3;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: #c9d7e3 solid 4px;
+}
+
+form#contact input{
+  width: 336px;
+  height: 53px;
+  margin-bottom: 18px;
+  @extend %fields;
+  @include placeholder {
+    text-transform: uppercase;
+    font-size: 17.66px;
+    padding-left: 14px;
+  }
+}
+
+form#contact textarea{
+  width: 336px;
+  height: 132px;
+  margin-bottom: 18px;
+  @extend %fields;
+  @include placeholder {
+    text-transform: uppercase;
+    font-size: 17.66px;
+    padding-left: 14px;
+    padding-top: 10px;
+  }
+}
+
+form#contact button{
+  width: 336px;
+  height: 53px;
+  background-color: $dark-blue;
+  border: none;
+  text-transform: uppercase;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
