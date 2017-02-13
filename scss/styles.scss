@@ -25,6 +25,8 @@ $insta-blue:#246485;
   &::-webkit-input-placeholder { @content }
 }
 
+
+
 //globals
 
 body {
@@ -48,11 +50,13 @@ h1 {
 
 #container {
   width: 1400px;
-  height: 5000px;
+  //height: 5000px;
   background-color: white;
   margin: 0 auto;
   padding: 0px;
 }
+
+
 
 //Header
 
@@ -206,10 +210,10 @@ h1 {
   left: 595px;
   width:341px;
   width: 5 * $column-width;
-  //margin-right: 10px;
-}
+  }
 form#contact {
   width:336px;
+  height:350px;
   padding: 0px;
   margin: 0 auto;
 }
@@ -229,6 +233,8 @@ form#contact ol li {
   border-right: none;
   border-top: none;
   border-bottom: #c9d7e3 solid 4px;
+  padding-left: 14px;
+  padding-top: 10px;
 }
 
 form#contact input{
@@ -239,8 +245,10 @@ form#contact input{
   @include placeholder {
     text-transform: uppercase;
     font-size: 17.66px;
-    padding-left: 14px;
-  }
+      }
+      -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
 }
 
 form#contact textarea{
@@ -251,9 +259,10 @@ form#contact textarea{
   @include placeholder {
     text-transform: uppercase;
     font-size: 17.66px;
-    padding-left: 14px;
-    padding-top: 10px;
   }
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 
 form#contact button{
@@ -266,4 +275,18 @@ form#contact button{
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.5px;
+}
+
+#footer {
+  height:90px;
+  background-color: $primary-color;
+  color:white;
+  font-size: 18px;
+  margin: 0 auto;
+  padding-top:22px;
+  padding-left:157px;
+}
+
+#footer span {
+  padding-left: 690px;
 }

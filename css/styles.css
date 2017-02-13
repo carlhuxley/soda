@@ -17,7 +17,6 @@ h1 {
 
 #container {
   width: 1400px;
-  height: 5000px;
   background-color: white;
   margin: 0 auto;
   padding: 0px; }
@@ -163,6 +162,7 @@ h1 {
 
 form#contact {
   width: 336px;
+  height: 350px;
   padding: 0px;
   margin: 0 auto; }
 
@@ -179,44 +179,43 @@ form#contact input, form#contact textarea {
   border-left: none;
   border-right: none;
   border-top: none;
-  border-bottom: #c9d7e3 solid 4px; }
+  border-bottom: #c9d7e3 solid 4px;
+  padding-left: 14px;
+  padding-top: 10px; }
 
 form#contact input {
   width: 336px;
   height: 53px;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   form#contact input.placeholder {
     text-transform: uppercase;
-    font-size: 17.66px;
-    padding-left: 14px; }
+    font-size: 17.66px; }
   form#contact input:-moz-placeholder {
     text-transform: uppercase;
-    font-size: 17.66px;
-    padding-left: 14px; }
+    font-size: 17.66px; }
   form#contact input::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-size: 17.66px;
-    padding-left: 14px; }
+    font-size: 17.66px; }
 
 form#contact textarea {
   width: 336px;
   height: 132px;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   form#contact textarea.placeholder {
     text-transform: uppercase;
-    font-size: 17.66px;
-    padding-left: 14px;
-    padding-top: 10px; }
+    font-size: 17.66px; }
   form#contact textarea:-moz-placeholder {
     text-transform: uppercase;
-    font-size: 17.66px;
-    padding-left: 14px;
-    padding-top: 10px; }
+    font-size: 17.66px; }
   form#contact textarea::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-size: 17.66px;
-    padding-left: 14px;
-    padding-top: 10px; }
+    font-size: 17.66px; }
 
 form#contact button {
   width: 336px;
@@ -228,3 +227,15 @@ form#contact button {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.5px; }
+
+#footer {
+  height: 90px;
+  background-color: #13364f;
+  color: white;
+  font-size: 18px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-left: 157px; }
+
+#footer span {
+  padding-left: 690px; }
