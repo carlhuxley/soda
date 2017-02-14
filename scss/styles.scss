@@ -50,6 +50,23 @@ h1 {
   text-align: center;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 #container {
   width: 1400px;
   //height: 5000px;
@@ -221,6 +238,16 @@ flex:1.4;
   margin :0px;
 }
 
+#contact a:link {
+    text-decoration: none;
+    color:$primary-color;
+   }
+
+#contact a:visited {
+    text-decoration: none;
+    color: $primary-color;
+}
+
 .right-col {
   flex:1;
   }
@@ -306,3 +333,8 @@ form#contact button{
 #footer span {
   padding-left: 690px;
 }
+
+#footer a:link , #footer a:visited{
+    text-decoration: none;
+    color:white;
+   }
