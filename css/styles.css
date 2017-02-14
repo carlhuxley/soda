@@ -1,6 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  font: 130% sans-serif;
+  font: 130% "Roboto", sans-serif;
   font-weight: 100;
   line-height: 1.8em;
   color: #13364f;
@@ -105,7 +104,7 @@ a:active {
   margin-right: 100px; }
 
 #left-col h2 {
-  font: 133% sans-serif;
+  font: 133%;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -189,6 +188,8 @@ a:active {
   color: #13364f; }
 
 .right-col {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1; }
 
 form#contact {
@@ -206,13 +207,17 @@ form#contact ol li {
   margin: 0px; }
 
 form#contact input, form#contact textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 17.66px;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #f2f3f3;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: #c9d7e3 solid 4px;
   padding-left: 14px;
-  padding-top: 10px; }
+  padding-top: 6px; }
 
 form#contact input {
   width: 336px;
@@ -221,32 +226,15 @@ form#contact input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  form#contact input.placeholder {
-    text-transform: uppercase;
-    font-size: 17.66px; }
-  form#contact input:-moz-placeholder {
-    text-transform: uppercase;
-    font-size: 17.66px; }
-  form#contact input::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-size: 17.66px; }
 
 form#contact textarea {
   width: 336px;
   height: 132px;
+  padding-top: 12px;
   margin-bottom: 18px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  form#contact textarea.placeholder {
-    text-transform: uppercase;
-    font-size: 22px; }
-  form#contact textarea:-moz-placeholder {
-    text-transform: uppercase;
-    font-size: 22px; }
-  form#contact textarea::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-size: 22px; }
 
 form#contact button {
   width: 336px;
