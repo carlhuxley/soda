@@ -44,7 +44,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   line-height: 1em;
   letter-spacing:6px;
-  padding-top:25px;
+  //padding-top:25px;
   text-align: center;
 }
 
@@ -181,6 +181,14 @@ a:active {
   margin: 0 auto;
 }
 
+#clients h1 {
+    color: white;
+    display: inline;
+    border-bottom: 1px solid white;
+    padding-bottom: -30px;
+    line-height: 2.5em;
+    }
+
  #clients .client-square {
    width:226px;
    height: 226px;
@@ -189,21 +197,6 @@ a:active {
    margin:11.5px;
    }
 
-#clients-heading {
-  position:relative;
-  top:50px;
-  text-align: center;
-  }
-
-#clients-heading .fine-rule {
-  display:inline-block;
-  position:relative;
-  top:-119px;
-  width:370px;
-  height:1px;
-  background-color:white;
-  margin-top:100px;
-}
 //Contact
 #contact{
   display: -webkit-box;
