@@ -216,8 +216,7 @@ form#contact input, form#contact textarea {
   border-right: none;
   border-top: none;
   border-bottom: #c9d7e3 solid 4px;
-  padding-left: 14px;
-  padding-top: 6px; }
+  padding-left: 14px; }
 
 form#contact input {
   width: 336px;
