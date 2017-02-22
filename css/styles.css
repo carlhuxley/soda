@@ -89,7 +89,7 @@ a:active {
   background-color: white;
   margin-top: 100px; }
 
-#main, #contact {
+#main {
   background-color: white;
   width: 1020.08px;
   height: 630px;
@@ -151,7 +151,14 @@ a:active {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: white;
+  width: 1020.08px;
+  height: 630px;
+  padding-top: 45px;
+  padding-left: 100px;
+  margin-left: 162px;
+  margin-top: 0px; }
 
 .left-col {
   flex: 1.25; }
@@ -159,17 +166,11 @@ a:active {
 #contact h2 {
   text-transform: uppercase;
   font-size: 42px;
-  margin-right: 20px;
-  margin-top: -30px; }
-
-#contact .fine-rule {
-  display: inline-block;
-  position: relative;
-  top: -68px;
-  width: 495px;
-  height: 1px;
-  background-color: #13364f;
-  margin-bottom: -30px; }
+  display: inline;
+  border-bottom: 1px solid #13364f;
+  padding-bottom: -30px;
+  line-height: 2.5em;
+  padding-bottom: 5px; }
 
 #contact p {
   width: 500px;
@@ -195,7 +196,7 @@ form#contact {
   width: 336px;
   height: 350px;
   padding: 0px;
-  margin: 0 auto; }
+  margin: 30px auto; }
 
 form#contact ol {
   margin: 0;
@@ -244,7 +245,8 @@ form#contact button {
   color: white;
   font-size: 20px;
   font-weight: bold;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  margin-top: -40px; }
 
 #footer {
   height: 90px;

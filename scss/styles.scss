@@ -131,7 +131,7 @@ a:active {
   margin-top:100px;
 }
 //Main
-#main,  #contact{
+#main {
   background-color: white;
   width:12.44 * $column-width;
   height: 630px;
@@ -140,7 +140,7 @@ a:active {
   margin-left: 162px;
 }
 
-#left-col{
+#left-col {
   width: 3 * $column-width;
   float:left;
   margin-right: 100px;
@@ -205,7 +205,13 @@ a:active {
   display: -ms-flex;
   display:flex;
   justify-content: space-between;
-  //margin-right: 50px;
+  background-color: white;
+  width:12.44 * $column-width;
+  height: 630px;
+  padding-top:45px;
+  padding-left: 100px;
+  margin-left: 162px;
+  margin-top: 0px;
 }
 .left-col {
 flex:1.25;
@@ -214,20 +220,13 @@ flex:1.25;
 #contact h2 {
   text-transform: uppercase;
   font-size: 42px;
-  margin-right: 20px;
-  margin-top: -30px;
-}
+  display: inline;
+  border-bottom: 1px solid $primary-color;
+  padding-bottom: -30px;
+  line-height: 2.5em;
+  padding-bottom: 5px;
+  }
 
-#contact .fine-rule
-{
-  display:inline-block;
-  position:relative;
-  top:-68px;
-  width:495px;
-  height:1px;
-  background-color:$primary-color;
-  margin-bottom:-30px;
-}
 #contact p {
   width:500px;
   margin-top: -10px;
@@ -252,12 +251,11 @@ flex:1.25;
   flex:1;
   }
 
-
 form#contact {
   width:336px;
   height:350px;
   padding: 0px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 form#contact ol{
@@ -318,6 +316,7 @@ form#contact button{
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.5px;
+  margin-top: -40px;
 }
 
 #footer {
